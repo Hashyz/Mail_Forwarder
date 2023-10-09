@@ -15,7 +15,7 @@ class MailReceiver:
       if self.rateLimit > 10:
         self.rateLimit = 0
         return False
-      return self.getMailID(self.name,self.domainName)
+      return self.getMailID()
     else:
       return id#[0]['id']
 
